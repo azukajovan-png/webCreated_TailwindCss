@@ -4,6 +4,9 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const Home = () => {
+    const handleClick = () => {
+        alert("this website is till under development");
+    }
     return (
     <div>   
         <div className="bg-black min-h-screen pb-20">
@@ -23,8 +26,8 @@ const Home = () => {
                     that fits your schedule.
                     </p>
 
-                    <button className="mt-8 bg-yellow-500 text-black hover:bg-yellow-400 px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg">
-                    Order Now
+                    <button onClick={handleClick} className="mt-8 bg-yellow-500 text-black hover:bg-yellow-400 px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg">
+                        Order Now
                     </button>
                 </div>
 
